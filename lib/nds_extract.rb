@@ -115,6 +115,9 @@ def movies_with_directors_set(source)
   new_array = []
   index = 0
   
+  movies_collection = source[index][:movies]
+  name = source[index]
+  
   while index < source.length do 
   
     new_array << source[index][:movies]
