@@ -112,11 +112,15 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
 
   
-  new_array = []
-  index = 0
+
   
   movies_collection = source[index][:movies]
   name = source[index]
+  
+  movies_with_director_key(name, movies_collection)
+  
+  new_array = []
+  index = 0 
   
   while index < source.length do 
   
