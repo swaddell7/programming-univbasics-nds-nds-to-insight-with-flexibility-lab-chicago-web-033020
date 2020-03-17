@@ -114,9 +114,11 @@ def movies_with_directors_set(source)
   
   new_array = []
   index = 0 
+  inner_index = 0 
   
   while index < source.length do 
-  
+    movie_hash = source[index][:movies][inner_index]
+    if !movie_hash[:director_name]
     new_array << source[index][:movies]
     index += 1 
     
